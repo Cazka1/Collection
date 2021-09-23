@@ -17,14 +17,14 @@ public class Collection {
         List<Integer> inputList = new ArrayList<>(size);
         Set<Integer> inputSet = new HashSet<>(size);
         System.out.println("Enter elements:");
-        Set<Integer> set = inputUniqeData(input, size, inputSet);
+        Set<Integer> set = inputUniqueData(input, size, inputSet);
         printData(set);
         System.out.println("Enter next elements: ");
-        Set<Integer> set1 = getUniqeValues(input, size, inputList);
+        Set<Integer> set1 = getUniqueValues(input, size, inputList);
         printData(set1);
     }
 
-    private static Set<Integer> getUniqeValues(Scanner input, int size, List<Integer> inputList) {
+    private static Set<Integer> getUniqueValues(Scanner input, int size, List<Integer> inputList) {
         try {
             for (int i = 0; i < size; i++) {
                 inputList.add(input.nextInt());
@@ -36,7 +36,7 @@ public class Collection {
         return set;
     }
 
-    private static Set<Integer> inputUniqeData(Scanner input, int size, Set<Integer> inputSet) {
+    private static Set<Integer> inputUniqueData(Scanner input, int size, Set<Integer> inputSet) {
         try {
             for (int i = 0; i < size; i++) {
                 if (!inputSet.add(input.nextInt())) {
