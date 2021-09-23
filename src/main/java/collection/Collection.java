@@ -16,6 +16,7 @@ public class Collection {
             size = input.nextInt();
         } catch (InputMismatchException x) {
             System.out.println("Enter correct size");
+            return;
         }
         Set<Integer> inputSet = new HashSet<>(size);
         System.out.println("Enter elements:");
@@ -24,7 +25,8 @@ public class Collection {
                 inputSet.add(input.nextInt());
             }
         } catch (InputMismatchException e) {
-            System.out.printf("it`s not a number");
+         System.out.println("it`s not a number");
+         return;
         }
         Iterator<Integer> iterator = inputSet.iterator();
         while (iterator.hasNext()) {
