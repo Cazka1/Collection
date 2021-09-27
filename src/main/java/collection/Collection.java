@@ -22,7 +22,7 @@ public class Collection {
             return;
         }
         if (size <= 0) {
-            throw new CollectionSizeException("size must be <=0");
+            throw new CollectionSizeException("size must be >0");
         }
         Set<Integer> inputSet = new HashSet<>(size);
         System.out.println("Enter elements:");
