@@ -2,7 +2,6 @@ package collection;
 
 import java.util.Collections;
 import java.util.HashSet;
-import java.util.InputMismatchException;
 import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
